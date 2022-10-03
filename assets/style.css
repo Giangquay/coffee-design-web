@@ -47,6 +47,10 @@ body{
     background-color: var(--main-color);
     cursor: pointer;
 }
+.margin-right-left
+{
+    margin: 0 4rem;
+}
 .btn:hover
 {
     letter-spacing: .2rem;
@@ -195,25 +199,22 @@ body{
     color: #eee;
 }
 /* about */
-.about .heading{
+.heading{
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    padding-bottom: 3.5rem;
+    padding: 3.5rem;
     font-size: 4rem;
 }
-.about .heading span{
+.heading span{
     color: var(--main-color);
-}
-section{
-    
 }
 .about .row{
     display: flex;
     align-items: center;
     background-color: var(--black);
     flex-wrap: wrap;
-    margin:0 4rem;
+    
 }
 .about .row .image{
     flex: 1 1 45rem;
@@ -236,21 +237,12 @@ section{
     line-height: 1.8;
 }
 /* menu */
-.menu .heading{
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 3.5rem;
-    font-size: 4rem;
-}
-.menu .heading span{
-    color: var(--main-color);
-}
+
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
     gap: 1.5rem;
-    margin:0 4rem;
+    
 }
 .menu .box-container .box{
     padding: 5rem;
@@ -282,21 +274,10 @@ section{
     color: var(--black);
 }
 /* products */
-.products .heading{
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 3.5rem;
-    font-size: 4rem;
-}
-.products .heading span{
-    color: var(--main-color);
-}
 .products .box-container
 {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-    margin: 0 4rem;
     gap: 1.5rem;
 }
 .products .box-container .box{
@@ -342,8 +323,181 @@ section{
     font-weight: lighter;
     font-size: 1.5rem;
 }
+/* review */
+.review .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.review .box-container .box p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+}
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review .box-container .box h3{
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 2rem;
+}
+.review .box-container .box .starts i{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+/* contact  */
+.contact .row{
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--bg);
+    border: var(--border);
+}
+.contact .row form .inputBox span{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+.contact .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
 
-
+/* blogs */
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.blogs .box-container .box{
+    /* text-align: center; */
+    border: var(--border);
+    /* padding: 3rem 5rem; */
+}
+.blogs .box-container .box .imgage{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+.blogs .box-container .box .imgage img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.blogs .box-container .box:hover .imgage img{
+    transform: scale(1.2);
+}
+.blogs .box-container .box  .content{
+    padding: 2rem;
+}
+.blogs .box-container .box  .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+    color: #fff;
+}
+.blogs .box-container .box  .content .title:hover{
+    color: var(--main-color);
+}
+.blogs .box-container .box  .content span{
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+.blogs .box-container .box .btn{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.blogs .box-container .box  .content p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
+/* footer */
+.footer{
+    margin-top: 2rem;
+    background: var(--black);
+    text-align: center;
+}
+.footer .share{
+    padding: 1rem 0;
+}
+.footer .share a{
+   height: 5rem;
+   width: 5rem;
+   line-height: 5rem;
+   font-size: 2rem;
+   color: #fff;
+   border: var(--border);
+   margin-top: 3rem;
+   border-radius: 50%;
+}
+.footer .share a:hover{
+    background-color:var(--main-color);
+}
+.footer .link{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+.footer .link a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+}
+.footer .link a:hover
+{
+    background-color:var(--main-color);
+}
+.footer .crediit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 2rem;
+}
+.footer .crediit span{
+    color: var(--main-color);
+}
 
 
 
@@ -450,17 +604,24 @@ section{
         height: 15rem;
         
     }
-    
-    
+    .blogs .box-container .box .btn {
+        width: 92%;
+        text-align: center;
+    }
+    .contact .row form .btn{
+        width: 100%;
+    }
    
 }
 @media (max-width:450px) {
     html{
-        font-size: 55%;
+        font-size: 50%;
     }
+    /* home */
+    .footer,
     .home{
         text-align: center;
-        width: 69vh;
+        width: 73vh;
         padding-right: 12px;
     }
     .home .content h3{
@@ -470,7 +631,11 @@ section{
         font-size: 1.5rem;
         margin-right: 12px;
     }
-    .menu .box-container .box {
+    /* menu - product */
+    .review .box-container .box,
+    .menu .box-container .box,
+    .contact .row,
+    .blogs .box {
         width: 60vh;
     }
     .about .row {
@@ -478,11 +643,26 @@ section{
     }
     .products .heading,
     .menu .heading,
-    .about .heading{
+    .about .heading,
+    .review .heading,
+    .contact .heading{
         position: relative;
         left: 75px;
+        top: 2rem;
+        bottom: 1rem;
     }
     .products .box-container{
         width: 60vh;
+    }
+    .review .box-container .box p{
+        font-size: 3rem;
+    }
+    .review .box-container .box .user{
+        width: 50%;
+        height: 26%;
+    }
+    
+    .contact .row .map {
+        height: 33rem;
     }
 }
